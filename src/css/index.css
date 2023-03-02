@@ -1,0 +1,201 @@
+@import url(./../vendors/normalize.css);
+@import url(./../vendors/fonts/fonts.css);
+
+body {
+    font-family: Inter, sans-serif;
+    box-sizing: border-box;
+}
+
+h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.todo__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo__title {
+    margin-top: 65px;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 77px;
+}
+
+.todo__form {
+    position: relative;
+    margin-top: 72px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.todo__input {
+    width: 427px;
+    border: 1px solid #AAAAAA;
+    border-radius: 20px;
+    padding: 15px 26px;
+    margin-right: 15px;
+}
+
+.todo__btn {
+    padding: 10px 16px;
+    border: 1px solid #AAAAAA;
+    border-radius: 20px;
+    background: #fff;
+    cursor: pointer;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #AAAAAA;
+    transition: .3s;
+}
+
+.todo__btn:hover {
+    background: #D9D9D9;
+    transition: .3s;
+    color: #fff;
+}
+
+.task__wrapper {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 53px 0 0 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.task__item:first-child {
+    margin-top: 0px;
+}
+
+.task__item {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 26px rgba(0, 0, 0, 0.13);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 30px;
+    max-width: 600px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.task__item-group {
+    display: flex;
+    align-items: center;
+}
+
+.task__item-checkbox {
+    margin-right: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.task__item-text {
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    outline: none;
+    max-width: 430px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.task__item-btn {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.task__item-btn_edit {
+    background-image: url('../img/editPost.svg');
+}
+
+.task__item-btn_edit:hover {
+    background-image: url('../img/editPost_active.svg');
+    transition: .3s;
+}
+
+.task__item-btn_delete {
+    background-image: url('../img/deletePost.svg');
+}
+
+.task__item-btn_delete:hover {
+    background-image: url('../img/deletePost_active.svg');
+}
+
+.content-save {
+    background-image: url('../img/check.svg');
+    
+}
+.content-save:hover {
+    background-image: url('../img/check_active.svg');
+    text-decoration:overline;
+}
+
+@media screen and (max-width: 730px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .todo__title {
+        font-size: 48px;
+    }
+
+    .todo__form {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .todo__input {
+        margin-right: 0px;
+        width: 100%;
+    }
+
+    .todo__btn {
+        margin-top: 20px;
+        font-size: 18px;
+    } 
+
+    .task__item {
+        width: 95%;
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    .task__item-text {
+        font-size: 16px;
+        max-width: 200px;
+    }
+
+    .task__item-checkbox {
+        width: 18px;
+        height: 18px;
+        margin-right: 15px;
+    }
+
+    .task__item-btn {
+        width: 20px;
+        height: 20px;
+    }
+}

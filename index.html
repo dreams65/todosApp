@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/index.css">
+  <title>ToDo App</title>
+</head>
+
+<body>
+  <main class="main">
+    <section class="todo">
+      <div class="container">
+        <div class="todo__wrapper">
+          <h1 class="todo__title">OOP ToDo App</h1>
+          <form action='#' class="todo__form">
+            <input type="text" name="todo__input" id="todo__input" class="todo__input" placeholder="enter your task">
+            <button class="todo__btn">create ToDo</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="container">
+        <ul class="task__wrapper"></ul>
+      </div>
+    </section>
+
+  </main>
+  <script src="./src/components/utils/constants.js"></script>
+  <script src="./src/components/Storage/Storage.js"></script>
+  <script src="./src/components/Todo/Todo.js"></script>
+  <script src="./src/components/UI/UI.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
